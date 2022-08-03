@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gantari', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+/* header styles*/
+.activo{
+    color: black ;
+    border-radius: 50px;
+    /* background-color: #BD9062 !important; */
+}
+header{
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    background-color: #be7d0d41;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .logo{
+    margin: 5px;
+}
+header .naving nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .naving nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header .naving nav ul li{
+    margin: 3px 5px;
+}
+header .naving nav ul li a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+
+
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: all .5s;
+  }
+   .item{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    /* background-color: #C08F61; */
+    transition: ease-in .5s;
+  } 
+  .item:hover{
+    background-color: #e2c6889c;
+  }
+  .dropdown-content {
+    display: none;
+    min-height: 100px;
+    position: absolute;
+    background-color: #be7d0d41;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    z-index: 1;
+    border-radius: 15px;
+    transition: all .5s;
+  }
+  .dropdown .dropdown-content a{
+    color: white;
+    display: flex;
+    height: 33px;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+  }
+  .dropdown .dropdown-content a:hover{
+    background-color: #e0961641;
+    border-radius: 15px;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+    height: 100px;
+  }
+
+
+
+
+  /* presentacion styles*/
+.presentacion{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/foro.jpg); 
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.presentacion img{
+    padding: 50px;
+    background-color: #be7d0d85;
+    border-radius: 25px;
+    
+}
+
+
+/* markers*/
+.mark{
+    margin-top: -225px;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mark .cosito{
+ 
+    width: 250px;
+    height: 250px;
+    background-color: #C08F61;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    margin: 0 25px;
+    font-size: 20px;
+}
+.mark .cosito:hover{
+    width: 350px;
+    height: 350px;
+}
+
+
+
+
+/* styles footer */
+footer{
+    width: 100%;
+    height: 330px;
+    background-color: #131313;
+     display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+footer .container_speach{
+    width: 33.33%;
+}
+footer .container_speach .container_logo img{
+    padding: 15px;
+    border-radius: 25px;
+    transition: all .5s;
+}
+footer .container_speach .container_logo img:hover{
+    background-color: #54642a;
+}
+.container_service{
+    color: white;
+    font-size: 20px;
+}
+.container_service a{
+    color: #8db624;
+    text-decoration: none;
+    margin: 10px;
+}
+.container_service .container_servicionfoot .verdoso{
+    color: #8db624;
+}
+.container_service .container_servicionfoot ul .verdeto{
+    color: #ffff;
+}
+.container_service .container_servicionfoot .titulo{
+    margin-bottom: 20px;
+
+}
+
+
+/*  seccion de mid como dicen en el lol*/
+.container_cosadelmedio{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container_cosadelmedio .tituloso{
+    color: #e09810;
+    font-size: 35px;
+    font-weight: bolder;   
+}
+.container_cosadelmedio .content_text{
+    width: 700px;
+    font-size: 20px;
+    text-align: center;
+    margin: 25px;
+    color: gray;
+    font-weight: lighter;
+}
+
+/* OFRECEMOS COSAS CHIDAS*/
+.container_ofertaspa{
+    display: flex;
+    justify-content: center;
+    color: #e09810;
+    font-size: 35px;
+}
+.container_cartitas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_cartitas .cartita{
+    width: 200px;
+    height: 300px;
+    margin: 15px;
+    border-radius: 25px;
+}
+.container_cartitas .cartita .logo{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 150px;
+}
+.container_cartitas .cartita .logo i{
+    font-size: 50px;
+}
+.container_cartitas .cartita .cositasricas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     font-size: 20px;
+    text-align: center; 
+}
+.robadito{
+position: fixed;
+top: 50px;
+right: 250px;
+}
+.__drpdown {
+  position: relative;
+  display: inline-block;
+}
+.drpdown__content {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -150px;
+  top: 4px;
+  background-color: #EEDEC1;
+  min-width: 200px;
+  height: 40px;
+  z-index: 1;
+  transition: all 10s;
+}
+.drpdown__content a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    /* background-color: #C08F61; */
+    transition: ease-in .5s;
+    margin-left: 40px;
+    width: 50px;
+    text-align: center;
+    border-radius: 0;
+}
+.drpdown__content a:hover {
+  border-top: solid white 3px;
+}
+.__drpdown:hover .drpdown__content {
+  display: flex;
+}
+
+
+
+
+
+/*   CSS de la pagina de weare    */
+#quienessomos{
+    margin-top: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+.barranashe{
+    padding: 15px 500px;
+    background-color: #e09710bd;
+    border-radius: 25px;
+    margin-bottom: 60px;
+}
+
+.speach{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.container_texto{
+    width: 550px;
+    text-align: center;
+    margin: 0 60px;
+}
+.container_texto .titulo{
+    margin: 20px;
+    font-size: 35px;
+    color: #e09810;
+}
+
+.barracontacto{
+    width: 80%;
+    height: 150px;
+    background-color: #DDA53D;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.barracontacto p{
+    color: white;
+    font-weight: lighter;
+    font-size: 20px;
+}
+.barracontacto a{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #131313;
+    color: white;
+    transition: all .5s;
+}
+.barracontacto a:hover{
+    color: black;
+    background-color: white;
+}
